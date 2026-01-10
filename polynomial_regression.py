@@ -1,6 +1,7 @@
 import torch.nn
 import sympy as sp
 
+# %%
 
 #intro
 
@@ -12,7 +13,7 @@ print('Enter the upper and lower bounds for x values you would like to give me:'
 upper=float(input('Upper bound:'))
 lower=float(input('Lower bound:'))
 
-
+# %%
 # make training input values
 x_s = torch.arange(lower, upper, 0.11)
 
@@ -23,7 +24,7 @@ function = sp.lambdify(x_input, function_input, 'numpy')
 
 # make training output values
 y_s = function(x_s)
-
+# %%
 #choose number of neurons in layer
 n_hidden_1 = 200
 
@@ -100,7 +101,6 @@ for i in range(max_steps):
     #to our data. More time would have let me set up batch normalisation for each layer to combat this issue.
     if i %10000 ==0:
         print(f'{i:7d}/{max_steps:7d} training rounds : loss = {mse_loss.item():.4f}')
-
 
 
 
