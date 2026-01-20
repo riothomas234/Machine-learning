@@ -4,4 +4,9 @@ This repository contains machine learning projects.
 
 [Makemore3](makemore3.ipynb) introduces trainable batch norm layers after each hidden layer to stabilize learning and reduce internal covariate shift. We track activations, gradient distributions, and update/data ratios to monitor network health, something not present in Make More 2. Weight scaling and output layer adjustments reduce saturation and overconfidence in predictions.
 
+
+The makemore projects are based on the machine learning playlist created by Andrej Karpathy: https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
+
 [Coniec](polynomial_regression.ipynb) is an interactive Python program that uses a simple neural network to approximate the output of a polynomial function you provide. Instead of directly computing the function, Coniec “guesses” the output for a given input after training on sampled values.
+
+
